@@ -1,0 +1,18 @@
+{
+  "naming_accuracy_all_test_attacks": 0.9865771812080537,
+  "naming_accuracy_within_alert_budget": 1.0,
+  "n_test_attacks": 149,
+  "n_attacks_in_budget": 97,
+  "alert_budget": 0.02,
+  "novel_class_demo": {
+    "held_out_type": "low_and_slow",
+    "n_heldout_alerting_events": 5,
+    "routed_to_novel": 5,
+    "fraction": 1.0
+  },
+  "decision_source_counts": {
+    "model": 13817,
+    "model-novel": 174,
+    "rule": 139
+  }
+}

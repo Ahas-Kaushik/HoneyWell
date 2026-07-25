@@ -1,0 +1,22 @@
+# Python caches / envs
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+.ipynb_checkpoints/
+
+# Local tool settings and OS cruft
+.claude/
+Thumbs.db
+.DS_Store
+
+# Office temp lock files
+~$*
+
+# Intermediate data dumps (regenerable from the fixed seed; not in the bundle)
+data/scores.parquet
+data/scores_v2.parquet
+data/seq_feat_err.parquet
+
+# Final submission archive kept locally as a record, not committed
+Honeywell_Q4_Submission.zip

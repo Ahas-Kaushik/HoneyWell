@@ -1,0 +1,11 @@
+# Behavioral Anomaly Detection -- Python dependencies (Python 3.11)
+# Pinned-ish to the versions this project was built/tested against.
+numpy>=1.26
+pandas>=2.0
+pyarrow>=12.0          # parquet I/O for events/labels
+faker>=20.0            # synthetic IDs / IPs / MACs
+scikit-learn>=1.3      # Isolation Forest baseline, metrics, calibration (Phase 2/4)
+torch>=2.0             # LSTM/GRU sequence autoencoder (Phase 3)
+shap>=0.44             # per-alert feature attribution (Phase 4)
+streamlit>=1.30        # analyst dashboard (Phase 5)
+matplotlib>=3.7        # metric curves / figures (Phase 4/5)

@@ -1,0 +1,288 @@
+{
+  "detection": {
+    "PR_AUC": 0.4217735868435735,
+    "ROC_AUC": 0.9782022005895825,
+    "test_anomaly_rate": 0.010544939844302902,
+    "alert_budget_table": [
+      {
+        "budget": 0.005,
+        "k_events": 71,
+        "precision": 0.4225352112676056,
+        "recall": 0.20134228187919462,
+        "true_positives": 30,
+        "false_positive_rate": 0.5774647887323944
+      },
+      {
+        "budget": 0.01,
+        "k_events": 141,
+        "precision": 0.3900709219858156,
+        "recall": 0.3691275167785235,
+        "true_positives": 55,
+        "false_positive_rate": 0.6099290780141844
+      },
+      {
+        "budget": 0.02,
+        "k_events": 283,
+        "precision": 0.34275618374558303,
+        "recall": 0.6510067114093959,
+        "true_positives": 97,
+        "false_positive_rate": 0.657243816254417
+      },
+      {
+        "budget": 0.05,
+        "k_events": 706,
+        "precision": 0.18413597733711048,
+        "recall": 0.87248322147651,
+        "true_positives": 130,
+        "false_positive_rate": 0.8158640226628895
+      }
+    ]
+  },
+  "per_type_recall": {
+    "top_1pct": {
+      "brute_force": {
+        "recall": 0.218,
+        "n": 55
+      },
+      "credential_stuffing": {
+        "recall": 0.545,
+        "n": 22
+      },
+      "device_spoofing": {
+        "recall": 1.0,
+        "n": 7
+      },
+      "impossible_travel": {
+        "recall": 0.9,
+        "n": 10
+      },
+      "lateral_movement": {
+        "recall": 0.421,
+        "n": 38
+      },
+      "low_and_slow": {
+        "recall": 0.0,
+        "n": 17
+      }
+    },
+    "top_2pct": {
+      "brute_force": {
+        "recall": 0.818,
+        "n": 55
+      },
+      "credential_stuffing": {
+        "recall": 0.636,
+        "n": 22
+      },
+      "device_spoofing": {
+        "recall": 1.0,
+        "n": 7
+      },
+      "impossible_travel": {
+        "recall": 0.9,
+        "n": 10
+      },
+      "lateral_movement": {
+        "recall": 0.447,
+        "n": 38
+      },
+      "low_and_slow": {
+        "recall": 0.294,
+        "n": 17
+      }
+    }
+  },
+  "confusion": {
+    "labels": [
+      "normal",
+      "insider_drift",
+      "brute_force",
+      "credential_stuffing",
+      "impossible_travel",
+      "device_spoofing",
+      "lateral_movement",
+      "low_and_slow",
+      "novel/unknown"
+    ],
+    "matrix": [
+      [
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
+        5,
+        2,
+        173
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        45,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        14,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        17,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "classification_report": {
+      "normal": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 185.0
+      },
+      "insider_drift": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 1.0
+      },
+      "brute_force": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 45.0
+      },
+      "credential_stuffing": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 14.0
+      },
+      "impossible_travel": {
+        "precision": 0.6428571428571429,
+        "recall": 1.0,
+        "f1-score": 0.782608695652174,
+        "support": 9.0
+      },
+      "device_spoofing": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 7.0
+      },
+      "lateral_movement": {
+        "precision": 0.7727272727272727,
+        "recall": 1.0,
+        "f1-score": 0.8717948717948718,
+        "support": 17.0
+      },
+      "low_and_slow": {
+        "precision": 0.7142857142857143,
+        "recall": 1.0,
+        "f1-score": 0.8333333333333334,
+        "support": 5.0
+      },
+      "novel/unknown": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      },
+      "accuracy": 0.34275618374558303,
+      "macro avg": {
+        "precision": 0.5699855699855699,
+        "recall": 0.6666666666666666,
+        "f1-score": 0.6097485445311532,
+        "support": 283.0
+      },
+      "weighted avg": {
+        "precision": 0.31269790280390986,
+        "recall": 0.34275618374558303,
+        "f1-score": 0.3251966704878058,
+        "support": 283.0
+      }
+    }
+  },
+  "calibration": {
+    "brier_raw_rankscore": 0.2660211440380809,
+    "brier_calibrated": 0.007275403337719665
+  },
+  "deduplication": {
+    "raw_alerts": 283,
+    "grouped_incidents": 221,
+    "reduction_factor": 1.28,
+    "largest_incident_events": 25
+  }
+}

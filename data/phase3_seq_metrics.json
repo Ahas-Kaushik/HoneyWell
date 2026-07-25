@@ -1,0 +1,44 @@
+{
+  "PR_AUC": {
+    "isolation_forest": 0.4205951309359665,
+    "sequence_ae": 0.263946697809667,
+    "unified_max": 0.4217735868435735
+  },
+  "alert_budget_unified": [
+    {
+      "budget": 0.005,
+      "k_events": 71,
+      "precision": 0.4225352112676056,
+      "recall": 0.20134228187919462,
+      "true_positives": 30
+    },
+    {
+      "budget": 0.01,
+      "k_events": 141,
+      "precision": 0.3900709219858156,
+      "recall": 0.3691275167785235,
+      "true_positives": 55
+    },
+    {
+      "budget": 0.02,
+      "k_events": 283,
+      "precision": 0.34275618374558303,
+      "recall": 0.6510067114093959,
+      "true_positives": 97
+    },
+    {
+      "budget": 0.05,
+      "k_events": 706,
+      "precision": 0.18413597733711048,
+      "recall": 0.87248322147651,
+      "true_positives": 130
+    }
+  ],
+  "config": {
+    "seq_len": 16,
+    "hidden": 32,
+    "latent": 16,
+    "epochs": 18,
+    "device": "cuda"
+  }
+}

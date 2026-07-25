@@ -1,0 +1,53 @@
+{
+  "model": "IsolationForest(n=300)",
+  "n_events_total": 47101,
+  "n_test": 14130,
+  "test_anomaly_rate": 0.010544939844302902,
+  "PR_AUC_test": 0.41995850679186253,
+  "ROC_AUC_test": 0.9097874440335854,
+  "alert_budget_table": [
+    {
+      "budget": 0.005,
+      "k_events": 71,
+      "precision": 0.7323943661971831,
+      "recall": 0.348993288590604,
+      "true_positives": 52
+    },
+    {
+      "budget": 0.01,
+      "k_events": 141,
+      "precision": 0.5531914893617021,
+      "recall": 0.5234899328859061,
+      "true_positives": 78
+    },
+    {
+      "budget": 0.02,
+      "k_events": 283,
+      "precision": 0.303886925795053,
+      "recall": 0.5771812080536913,
+      "true_positives": 86
+    },
+    {
+      "budget": 0.05,
+      "k_events": 706,
+      "precision": 0.15439093484419264,
+      "recall": 0.7315436241610739,
+      "true_positives": 109
+    }
+  ],
+  "per_feature_PR_AUC": {
+    "failed_auth_in_window": 0.49826496064406955,
+    "ip_fanin": 0.14335769959674546,
+    "cmd_novelty": 0.09023259569576844,
+    "geo_velocity_kmh": 0.06278229252858816,
+    "device_mismatch": 0.0570294057576578,
+    "off_hours": 0.018944894280656766,
+    "duration_zscore": 0.013114218252221893,
+    "resource_novelty": 0.012068785089801854,
+    "cold_start": 0.010544939844302902
+  },
+  "accuracy_trap_note": {
+    "predict_all_normal_accuracy": 0.9894550601556971,
+    "explanation": "This is why accuracy is banned: guessing 'normal' for every event scores this high while catching zero attacks."
+  }
+}

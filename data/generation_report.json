@@ -1,0 +1,20 @@
+{
+  "n_events": 47101,
+  "n_anomalies": 679,
+  "anomaly_fraction": 0.01441582981253052,
+  "by_attack_type": {
+    "normal": 46256,
+    "brute_force": 282,
+    "insider_drift": 166,
+    "low_and_slow": 126,
+    "lateral_movement": 119,
+    "credential_stuffing": 94,
+    "impossible_travel": 30,
+    "device_spoofing": 28
+  },
+  "n_entities": 100,
+  "time_span": [
+    "2026-06-01 00:01:25.505000",
+    "2026-06-30 23:55:23.707000"
+  ]
+}
